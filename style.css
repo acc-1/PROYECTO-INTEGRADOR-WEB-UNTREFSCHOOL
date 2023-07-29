@@ -1,0 +1,514 @@
+/* Los datos suministrados son:
+-Nombre del instituto: UntrefSchool
+- Paleta de colores: #FC7300 , #1F8A70 , #00425A ,
+#181823, #EFF5F5
+Tipografias: https://fonts.google.com/specimen/Poppins ,
+https://fonts.google.com/specimen/Belanosima */
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.map-img {
+  text-align: center;
+  margin-top: 20%;
+}
+.map-img img {
+  width: 80%;
+}
+body {
+  background-color: #181823;
+  color: #eff5f5;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.menu {
+  backdrop-filter: blur(2.7px);
+  background-color: #1f8a6fa8;
+}
+.navbar {
+  list-style-type: none;
+
+  align-items: center;
+
+  justify-content: center;
+  display: flex;
+  height: 50px;
+}
+h2 {
+  color: #fc7300;
+}
+.navbar li {
+  height: 100%;
+  text-align: center;
+}
+.navbar li a {
+  color: #eff5f5;
+
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  transition: 120ms;
+  background-color: #00425a;
+}
+.titulo h1 {
+  display: flex;
+  background-image: url(img/buildingfront.webp);
+  opacity: 1;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  font-size: 5em;
+  align-items: center;
+  text-shadow: 10px 4px 10px rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+#uno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+#uno p {
+  text-align: center;
+  margin: 0px;
+}
+#uno h2 {
+  text-align: center;
+  font-size: 2.3em;
+}
+#uno img {
+  width: 50%;
+  padding: 5%;
+  object-fit: cover;
+}
+#dos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 35px;
+}
+#dos p {
+  text-align: center;
+  margin: 0px;
+}
+#dos h2 {
+  text-align: center;
+  font-size: 2.3em;
+}
+#dos img {
+  width: 50%;
+  padding-left: 100px;
+  object-fit: cover;
+  height: auto;
+}
+.card .promedio {
+  color: #fc7300;
+}
+.container-dos {
+  padding-left: 100px;
+}
+#tres {
+  margin-bottom: 150px;
+  padding-top: 60px;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-align: center;
+}
+#tres h2 {
+  font-size: 2.3em;
+}
+#tres p {
+  padding: 0px 20% 0px 20%;
+}
+#cuatro {
+  margin-bottom: 150px;
+  padding-top: 60px;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+#cuatro h2 {
+  font-size: 2.3em;
+}
+/* - Paleta de colores: #FC7300 , #1F8A70 , #00425A ,
+#181823, #EFF5F5 */
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.content h2 {
+  display: grid;
+  place-items: center;
+}
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+.contact-form {
+  background: #181823;
+}
+.contact-form form {
+  display: grid;
+  grid-template-rows: auto;
+  background: #181823;
+}
+.contact-form form label {
+  display: block;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #00425a;
+}
+.contact-form form button {
+  background: #00425a;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  transition: 300ms;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #fc7300;
+  transition: 300ms;
+}
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+}
+.contact-info li {
+  background: #000;
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  background: #000;
+}
+.titulo2 {
+  text-align: center;
+}
+/* Estilos generales para el contenedor */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Estilos generales para las tarjetas */
+.card {
+  width: 250px;
+  border: 1px solid #00425a;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para las imágenes */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 228px;
+  object-fit: cover;
+}
+/* Estilos para los nombres */
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1f8a70;
+}
+/* Estilos para la información de los estudiantes */
+.card p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+/* Estilos para las habilidades destacadas */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card li {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+footer {
+  background-color: #181823;
+  padding: 20px 0;
+}
+.contenido-footer {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.seccion-footer {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.seccion-instituto {
+  height: 180px;
+}
+.seccion-instituto h3 {
+  height: 100%;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8%;
+}
+.seccion-footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.seccion-footer p {
+  color: #666;
+  line-height: 1.6;
+}
+.seccion-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.seccion-footer ul li {
+  margin-bottom: 5px;
+}
+.seccion-footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 600ms;
+}
+.seccion-footer a:hover {
+  color: #fc7300;
+  transition: 300ms;
+  font-size: 1.2em;
+}
+.footer-inferior {
+  text-align: center;
+  padding: 10px;
+  background-color: #181823;
+}
+.footer-inferior p {
+  color: #666;
+}
+.nav-toggle {
+  color: white;
+  background: #00425a;
+  font-size: 38px;
+  display: none;
+  cursor: pointer;
+  border: none;
+}
+@media (min-width: 768px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}/* }- Paleta de colores: #FC7300 , #1F8A70 , #00425A ,
+#181823, #EFF5F5 */
+@media (max-width: 1035px) {
+  #uno {
+    flex-direction: column;
+  }
+  .prueba1 {
+    width: 70%;
+    text-align: center;
+  }
+  #uno img {
+    width: 80%;
+  }
+  .container-dos {
+    padding-left: 0px;
+  }
+  #dos {
+    flex-direction: column;
+  }
+  #dos img {
+    margin-top: 30px;
+    order: 3;
+    width: 80%;
+    padding-left: 0px;
+  }
+  #tres p {
+    padding: 0px 12% 0px 12%;
+  }
+}
+@media (max-width: 530px) {
+  .titulo h1 {
+    font-size: 3em;
+  }
+  .navbar li a {
+    padding: 0px;
+    font-size: 0.9em;
+  }
+  #tres p {
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (max-width: 529px) {
+  #uno {
+    margin: 0px;
+  }
+  .prueba1 {
+    width: 90%;
+  }
+  #uno img {
+    width: 90%;
+  }
+  #dos {
+    padding: 0px;
+  }
+  .container-dos {
+    width: 90%;
+  }
+  #dos img {
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .prueba1 {
+    width: 100%;
+  }
+  #uno {
+    padding: 0;
+    margin: 0px;
+    margin-left: 0px;
+  }
+  #uno div p {
+    text-align: start;
+    padding: 5px;
+  }
+  #dos div p {
+    text-align: start;
+    padding: 5px;
+  }
+  #dos {
+    padding: 0;
+  }
+  #uno img {
+    display: none;
+  }
+  #dos img {
+    display: none;
+  }
+  #tres {
+    margin: 0;
+  }
+  #tres p {
+    text-align: start;
+    padding: 5px;
+  }
+  .container-dos {
+    padding-left: 0px;
+  }
+  #cuatro h2 {
+    text-align: center;
+  }
+  #cuatro {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+  }
+  .titulo {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .contenido-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seccion-footer {
+    text-align: center;
+  }
+}
+@media (max-width: 705px) {
+  .navbar li {
+    width: 100%;
+  }
+  .menu {
+    backdrop-filter: none;
+    background-color: #00425a;
+    height: 45px;
+  }
+  .titulo {
+    display: none;
+  }
+  .navbar {
+    left: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 135px;
+  }
+  .navbar li a:hover {
+    background-color: #fc7300;
+  }
+  .navbar li a {
+    line-height: 50px;
+    background-color: #00425a;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+}

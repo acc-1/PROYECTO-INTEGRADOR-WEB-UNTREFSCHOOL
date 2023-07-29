@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181823;
+    color: #eff5f5;
+    font-size: 1.3em;
+}
+.content{
+   width: 100%;
+}
+
+.container {
+ 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .content h2{display: grid;
+    place-items: center ;
+  }
+   .logo {
+    text-align: center;
+    font-size: 3em;
+  } 
+  
+  
+  
+  
+  
+  
+  
+  .contact-wrapper > * {
+    padding: 1em;
+  }
+  .contact-form h3{
+    display: none;
+  }
+  .contact-form {
+    background: #181823;
+    
+    
+  }
+  
+  .contact-form form {
+    display: grid;
+    grid-template-rows: auto;
+    background: #181823;
+  }
+  
+  .contact-form form label {
+    display: block;
+  }
+  
+  .contact-form form p {
+    margin: 0;
+    padding: 1em;
+  }
+  
+  .content h2{
+    display: none;
+
+  }
+  
+  .contact-form form button,
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #00425a;
+  }
+  
+  .contact-form form button {
+    background: #00425a;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    transition: 300ms;
+  }
+  
+  .contact-form form button:hover,
+  .contact-form form button:focus {
+    background: #fc7300;
+    transition: 300ms;
+  }
+  
+  /* CONTACT INFO */
+  .contact-info {
+    
+    background: #000;
+    height: 100vh;
+    padding-bottom: 0px;
+   
+    
+  }
+  .contact-info li {
+    background: #000;
+   
+  }
+  
+  .contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    background: #000;
+  }
+
+  .map-img{
+    
+    text-align: center;
+    margin-top:20%;
+  }
+  .map-img img{
+    width: 60%;
+  }
+
+
+@media(min-width: 768px) {
+  
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+   
+    
+  }
+
+  @media(max-width: 768px){
+    .map-img img{
+        width: 56%;
+      }
+
+  }
+
+  @media(max-width: 510px){
+    .map-img img{
+        width: 85%;
+      }
+
+  }
+  @media(max-width: 370px){
+    .map-img img{
+        width: 100%;
+      }
+
+  }
